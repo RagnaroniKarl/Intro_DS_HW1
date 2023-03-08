@@ -1,0 +1,68 @@
+---
+title: "Intro_DS_HW1"
+author: "Laurine"
+date: "3/8/2023"
+output: html_document
+---
+
+## Exercice 1 : R Markdown 
+
+# Introduction
+
+# Picture 
+
+**Picture (with caption):**
+
+![Pink Car Good Drive](https://images.pexels.com/photos/12194753/pexels-photo-12194753.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load)
+
+# Citation 
+
+> "JE PENSE DONC JE SUIS" 
+                                                                   Descartes 
+                                                                   
+#  Emoji          
+
+Here are some nice emoji: 
+`r emo::ji("sunset")`
+`r emo::ji("shushing face")`
+`r emo::ji("sleeping face")`
+
+# Giphy
+
+Here is a big Giphy: 
+
+![Understand R ](https://media.giphy.com/media/tltOxW1fPVE1xxEX3j/giphy.gif?cid=ecf05e47pe2asv6kfr5151b26cgjte04hbk7ht33wu1o2f8b&rid=giphy.gif&ct=g) 
+
+and a smaller one... <img src='https://media.giphy.com/media/VWRGVjCo3Xcac/giphy.gif?cid=ecf05e47xs2qlrtpgrktaqx70x5zi1f73fmghpwih455czhz&rid=giphy.gif&ct=g' width='200' height='200' />
+
+# Table 
+
++---------------+---------------+
+| Classes       | Time          |              
++===============+===============+
+|Introduction to| 4 hours       | 
+|Econometrics   |               |   
++---------------+---------------+
+|Introduction to| 4 hours       | 
+|Data Science   |               | 
++---------------+---------------+
+|Introduction à | 2 hours       | 
+|la sexolgie    |               | 
++---------------+---------------+
+|Developpement  | 2 hours       | 
+|Durable        |               | 
++---------------+---------------+
+|Création       | 2 hours       | 
+|d'entreprise   |               | 
++---------------+---------------+
+|Consumer       | 4 hours       | 
+|Behavior       |               | 
++---------------+---------------+
+|Economie       | 4 hours       | 
+|Contemporaine  |               | 
++---------------+---------------+
+
+# Video
+
+Here is a funny video: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MVjD3CVlRDs" title="YouTube video player" frameborder="0" data-external ="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
