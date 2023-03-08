@@ -214,7 +214,7 @@ library(quantmod)
 library(PerformanceAnalytics)
 ```
 
-````{r}
+```{r}
 getSymbols("AAPL", from = min(mydates2013), to = max(mydates2013))
 getSymbols("CSCO", from = min(mydates2013), to = max(mydates2013))
 getSymbols("INTC", from = min(mydates2013), to = max(mydates2013))
@@ -231,6 +231,7 @@ JPM_returns <- na.omit(ClCl(JPM))
 Rf <- 0.03/(252)
 ```
 
+```{r}
 mean(AAPL_returns) 
 mean(GOOG_returns)
 mean(CSCO_returns)
@@ -245,14 +246,18 @@ sd(CSCO_returns)
 sd(INTC_returns)
 sd(HD_returns)
 sd(JPM_returns)
+```
 
+```{r}
 sharpe_ratioAAPL <- (mean(AAPL_returns) - Rf) / sd(AAPL_returns) * sqrt(252)
 sharpe_ratioGOOG <- (mean(GOOG_returns) - Rf) / sd(GOOG_returns) * sqrt(252)
 sharpe_ratioCSCO <- (mean(CSCO_returns) - Rf)/sd(CSCO_returns) * sqrt(252)
 sharpe_ratioINTC <- (mean(INTC_returns) - Rf )/ sd(INTC_returns) * sqrt(252)
 sharpe_ratioHD <- (mean(HD_returns)- Rf) / sd(HD_returns) * sqrt(252)
 sharpe_ratioJPM <- (mean(JPM_returns)- Rf) / sd(JPM_returns) * sqrt(252)
+```
 
+```{r}
 cat("Sharpe Ratios for each stock:")
 print(sharpe_ratioAAPL)
 print(sharpe_ratioGOOG) 
@@ -260,15 +265,18 @@ print(sharpe_ratioCSCO)
 print(sharpe_ratioINTC)
 print(sharpe_ratioHD)
 print(sharpe_ratioJPM)
+```
 
-
+```{r}
 AAPL_return = quantmod::dailyReturn(AAPL)
 CSCO_return = quantmod::dailyReturn(CSCO)
 INTC_return = quantmod::dailyReturn(INTC)
 HD_return = quantmod::dailyReturn(HD)
 GOOG_return = quantmod::dailyReturn(GOOG)
 JPM_return = quantmod::dailyReturn(JPM)
+```
 
+```{r}
 #excess return
 AAPL_excess = AAPL_return - 0.03/252
 CSCO_excess = CSCO_return - 0.03/252
@@ -276,7 +284,9 @@ INTC_excess = INTC_return - 0.03/252
 GOOG_excess = GOOG_return - 0.03/252
 JPM_excess = JPM_return - 0.03/252
 HD_excess = HD_return - 0.03/252
+```
 
+```{r}
 #yearly sharpe ratio
 AAPL_sharpe_yearly = mean(AAPL_excess) / sd(AAPL_excess) * sqrt(252)
 CSCO_sharpe_yearly = mean(CSCO_excess) / sd(CSCO_excess) * sqrt(252)
@@ -285,19 +295,19 @@ HD_sharpe_yearly = mean(HD_excess) / sd(HD_excess) * sqrt(252)
 GOOG_sharpe_yearly = mean(GOOG_excess) / sd(GOOG_excess) * sqrt(252)
 JPM_sharpe_yearly = mean(JPM_excess) / sd(JPM_excess) * sqrt(252)
 
-yearly_shape = cbind(AAPL_sharpe_yearly, CSCO_sharpe_yearly, INTC_sharpe_yearly, HD_sharpe_yearly, JPM_sharpe_yearly)
+yearly_shape = cbind(AAPL_sharpe_yearly, CSCO_sharpe_yearly, INTC_sharpe_yearly, HD_sharpe_yearly, GOOG_sharpe_yearly, JPM_sharpe_yearly)
 
 colnames(yearly_shape) = c("AAPL", "CSCO", "INTC", "HD", "GOOG", "JPM")
 yearly_shape
+``` 
 
-
+```{r}
 #estimation of mean (mu) and variance (Sigma)
 mat_return = cbind(AAPL_return, CSCO_return, INTC_return, HD_return, GOOG_return, JPM_return)
 colnames (mat_return) = c("AAPL", "CSCO", "INTC", "HD", "GOOG", "JPM")
 
 mu = apply(mat_return, 2, mean)
 Sigma = var(mat_return)
-```
 
 
 # equally weighted portfolio
@@ -307,5 +317,9 @@ muequal = mean(equal_return)
 varequal = var(equal_return)
 
 #The individual variance of these 6 stocks are:
-diag(Sigma
+diag(Sigma)
+``` 
+
+
+
 
