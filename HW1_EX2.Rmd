@@ -230,8 +230,8 @@ Moreover, the variance of this optimally weighted portfolio is r round(var_optim
 investment_summary = matrix(NA, 2, 8)
 dimnames(investment_summary)[[1]] = c("Expected value", "Variance")
 dimnames(investment_summary)[[2]] = c("AAPL", "CSCO", "INTC", "HD", "GOOG", "JPM", "Equal", "Min var")
-investment_summary[1, ] = c(mu, mu_equal, mu_optim)
-investment_summary[2, ] = c(diag(Sigma), var_equal, var_optim)
+investment_summary[1, ] = c(mu, muequal, mu_optim)
+investment_summary[2, ] = c(diag(Sigma), varequal, var_optim)
 investment_summary
 ```
 
