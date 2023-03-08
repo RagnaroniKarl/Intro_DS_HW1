@@ -9,6 +9,7 @@ output: html_document
 ## R Markdown Syntax
 
 ### MARA
+
 ## Picture
 ![High Kick during a Muay Thai Fight](https://cdn.onefc.com/wp-content/uploads/2020/01/Jamal-Yusupov-defeats-Yodsanklai-at-ONE-AGE-OF-DRAGONS-DA-5280.jpg)
 
@@ -89,30 +90,31 @@ and a smaller one... <img src='https://media.giphy.com/media/VWRGVjCo3Xcac/giphy
 
 ## Table 
 
-+---------------+---------------+
-| Classes       | Time          |              
-+===============+===============+
-|Introduction to| 4 hours       | 
-|Econometrics   |               |   
-+---------------+---------------+
-|Introduction to| 4 hours       | 
-|Data Science   |               | 
-+---------------+---------------+
-|Introduction à | 2 hours       | 
-|la sexolgie    |               | 
-+---------------+---------------+
-|Developpement  | 2 hours       | 
-|Durable        |               | 
-+---------------+---------------+
-|Création       | 2 hours       | 
-|d'entreprise   |               | 
-+---------------+---------------+
-|Consumer       | 4 hours       | 
-|Behavior       |               | 
-+---------------+---------------+
-|Economie       | 4 hours       | 
-|Contemporaine  |               | 
-+---------------+---------------+
++-------------------------------+---------------+
+| Classes                       | Time          |
++===============================+===============+
+|   Introduction                | 4 hours       | 
+|to Economotrics                |               | 
++-------------------------------+---------------+
+| Consumer Behavior             | 4 hours       | 
+|                               |               | 
++-------------------------------+---------------+
+| Eco contemporaine             | 4 hours       | 
+| Dans une perspective          |               |
+| Historique                    |               |
++-------------------------------+---------------+
+| Création d'entreprise et      | 2 hours       | 
+| système d'innovation          |               | 
++-------------------------------+---------------+
+| Intro to Data Science         | 4 hours       |
+|                               |               |
++-------------------------------+---------------+
+| Intro à la sexologie          | 2 hours       | 
+|                               |               |
++-------------------------------+---------------+
+| Developpement Durable II      | 2 hours       | 
+|                               |               |
++-------------------------------+---------------+
 
 ## Video
 
