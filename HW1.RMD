@@ -8,7 +8,7 @@ output: html_document
 
 ## R Markdown Syntax
 
-### MARA
+### MARA SARTORI
 
 ## Picture
 ![High Kick during a Muay Thai Fight](https://cdn.onefc.com/wp-content/uploads/2020/01/Jamal-Yusupov-defeats-Yodsanklai-at-ONE-AGE-OF-DRAGONS-DA-5280.jpg)
@@ -121,7 +121,7 @@ and a smaller one... <img src='https://media.giphy.com/media/VWRGVjCo3Xcac/giphy
 Here is a funny video: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MVjD3CVlRDs" title="YouTube video player" frameborder="0" data-external ="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-### Maïlis CARRAUX
+### MAÏlIS CARRAUX
 
 ##R Markdown Syntax
 
